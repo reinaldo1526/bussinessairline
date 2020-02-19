@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>Final Project</title>
+</head>
+
+<!-- 1st Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-ba">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" id="nav-b" href="{{ url_for('signup') }}"><img src="../static/images/icons/plus.svg"
+                        class="white" alt="" width="32" height="32" title="Person Fill">CREATE AN ACCOUNT</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" id="nav-b" href="{{ url_for('login') }}"><img
+                        src="../static/images/icons/person-fill.svg" class="white" alt="" width="32" height="32">MY
+                    ACCOUNT</a>
+                <!--End of 1st Nav Bar-->
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!--2nd Nav Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar2">
+    <a class="navbar-brand" href="{{ url_for('home') }}"><i class="fas fa-plane"></i>BUSSINESS AIRLINE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#">PLAN YOUR TRIP<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">MANAGE MY BOOKING</a>
+            <a class="nav-item nav-link" href="#">CHECK IN</a>
+        </div>
+    </div>
+</nav>
+<!--End of 2nd Nav Bar-->
+
+<body>
+    {% block content %}
+    {% endblock content %}
+</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" id="footer">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 id="title1" class="text-uppercase">TALK TO US</h5>
+                <p id="let1">To make or change a reservation, or to ask any question</p>
+                <h5 id="title1">PLEASE CONTACT OUR CUSTOMER SERVICE TEAM</h5>
+                <p id="let1">
+                    <img src="../static/images/icons/envelope-open-fill.svg" alt="" width="26" height="26" class="white"
+                        title="Envelope Open Fill">BussinessT@gmail.com</br>
+
+                    </br>
+                    1-800-888-7788 (toll free)</br>
+
+                    From Monday to Saturday from 8AM to 6PM</br>
+
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 id="title1" class="text-uppercase">Plan your trip</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">&#x25B8; Administrative Formalities</a>
+                    </li>
+                    <li>
+                        <a href="#!">&#x25B8; Special Services</a>
+                    </li>
+                    <li>
+                        <a href="#!">&#x25B8; Happenings Onboard</a>
+                    </li>
+                    <li>
+                        <a href="#!">&#x25B8; Our favorite places in Paris</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 id="title1" class="text-uppercase">about us</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">&#x25B8; Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#!">&#x25B8; Our Team</a>
+                    </li>
+                    <li>
+                        <a href="#!">&#x25B8; Our News</a>
+                    </li>
+                    <li>
+                        <a href="#!">&#x25B8; Our Partners</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a> Bussiness Airline</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+</html>

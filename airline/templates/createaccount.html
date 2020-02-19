@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Create an account</h1>
+
+<form action="" method="POST">
+    {{ signupform.hidden_tag() }}
+    <div>
+        <fieldset>
+            {{ signupform.firstname.label }}
+            {{ signupform.firstname(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{ signupform.lastname.label }}
+            {{ signupform.lastname(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{ signupform.email.label }}
+            {{ signupform.email(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{ signupform.password.label }}
+            {{ signupform.password(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{ signupform.address.label }}
+            {{ signupform.address(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{signupform.phonenumber.label }}
+            {{signupform.phonenumber(class="form-control") }}
+        </fieldset>
+        {{signupform.submit(class="button") }}
+    </div>
+</form>
+
+{% endblock content %}
