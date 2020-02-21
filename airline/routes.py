@@ -56,3 +56,10 @@ def login():
     return render_template("login.html", loginform=loginForm)
 
 
+# booking route
+@app.route("/booking", methods=["GET", "POST"])
+def booking():
+    posts = Post.query.all()
+    return render_template("booking.html", post=posts)
+
+
